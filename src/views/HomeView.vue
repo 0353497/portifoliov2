@@ -91,6 +91,7 @@ export default {
 .bi:hover {
   color: rgb(72, 198, 240);
   background-color: transparent;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  -webkit-filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, .7));
+    filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, .7));
 }
 </style>
