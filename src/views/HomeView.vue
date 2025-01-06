@@ -10,6 +10,11 @@
       description="Ik heb ervaring met verschillende programmeertalen en frameworks, waaronder Vue.js, JavaScript, HTML, CSS, C#, Flutter, ASP .Net Razor, en PHP." />
     <hr>
     <List :title="competentiesTitle" :items="competenties" />
+    <hr>
+    <TextCenter title="Sterkte en Zwakte"
+      description="Ik ben goed in programmeren, maar ik vind het documenteren/scrum minder leuk. Dus ik zou zeggen dat mijn sterkte programmerenn is en mijn zwakte scrum" />
+    <TextCenter title="Leerstijl"
+      description="Mijn leerstijl is actief bezig zijn met het onderwerp/project. Ik leer niet snel uit een boek maar sneller door actief bezig te gaan en goed te oefenen." />
   </div>
 </template>
 
