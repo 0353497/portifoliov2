@@ -29,7 +29,8 @@
         dieper ingaat op je minder dominante types en de balans tussen je eigenschappen.
       </p>
     </Card>
-    <h3>CV</h3>
+    <hr>
+    <h3>CV/Persoonlijkheidprofiel</h3>
     <embed class="embed" src="/assets/CV Niek.pdf" type="application/pdf" frameBorder="0" scrolling="auto"
       width="100%"></embed>
 
