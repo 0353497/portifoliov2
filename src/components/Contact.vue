@@ -1,6 +1,6 @@
 <template>
     <div class="container mt-5">
-        <div v-if="formSubmitted" class="alert alert-success mt-3" role="alert">
+        <div v-if="formSubmitted" id="contactSucces" class="alert alert-success mt-3 reveal" role="alert">
             Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.
         </div>
         <h2>Contacteer mij</h2>
@@ -37,8 +37,8 @@ export default {
     },
     methods: {
         handleSubmit() {
+            document.querySelector('#contactSucces').classList.add('active');
             this.formSubmitted = true;
-
             this.name = '';
             this.email = '';
             this.message = '';

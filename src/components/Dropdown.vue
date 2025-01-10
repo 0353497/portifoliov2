@@ -1,6 +1,6 @@
 <template>
     <ul class="dropdown-menu">
-        <li v-for="(item, index) in listItems" :key="index">
+        <li v-for="(item, index) in listItems" :key="index" @click="item.action">
             <router-link class="dropdown-item" :to="item.href">{{ item.name }}</router-link>
         </li>
     </ul>
@@ -22,3 +22,4 @@ export default {
     }
 }
 </script>
+<style></style>

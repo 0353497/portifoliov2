@@ -42,7 +42,8 @@ export default {
             listItems: [
                 new ListItem('Home', '/'),
                 new ListItem('About', '/about'),
-                new ListItem('Login', '/login')
+                new ListItem('Login', '/login'),
+                new ListItem('404', '/404'),
             ]
         }
     }

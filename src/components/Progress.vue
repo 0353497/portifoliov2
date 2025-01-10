@@ -1,11 +1,13 @@
 <template>
     <div class="progress">
-        <div class="progress-bar" role="progressbar" :style="{ width: progress + '%' }" :aria-valuenow="progress"
-            aria-valuemin="0" aria-valuemax="100" :class="color + (striped ? ' progress-bar-striped' : '')">
+        <div class="progress-bar" role="progressbar" :style="{ width: animatedProgress + '%' }"
+            :aria-valuenow="progress" aria-valuemin="0" aria-valuemax="100"
+            :class="color + (striped ? ' progress-bar-striped' : '')">
             {{ progress }}%
         </div>
     </div>
 </template>
+
 <script>
 export default {
     name: 'Progress',
@@ -32,7 +34,23 @@ export default {
             required: false,
             default: false
         }
+    },
+    data() {
+        return {
+            animatedProgress: 0
+        };
+    },
+    mounted() {
+        this.animatedProgress = 0;
+        setTimeout(() => {
+            this.animatedProgress = this.progress;
+        }, 50);
     }
-}
+};
 </script>
-<style scoped></style>
+
+<style scoped>
+.progress-bar {
+    transition: width 2s ease-in-out;
+}
+</style>

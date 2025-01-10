@@ -1,18 +1,21 @@
 <template>
   <div class="container">
-    <Index />
-    <hr>
-    <Certificaten :certificaten="certificaten" />
-    <hr>
+    <Index class="hover-hide" />
+    <hr class="hover-hide">
+    <Certificaten :certificaten="certificaten" class="hover-hide" />
+    <hr class="hover-hide">
     <TextCenter title="Wie ben ik"
-      description="Dit is een korte beschrijving over wie ik ben. Ik ben een softwareontwikkelaar met een passie voor het bouwen van webapplicaties en het leren van nieuwe technologieën." />
+      description="Dit is een korte beschrijving over wie ik ben. Ik ben een softwareontwikkelaar met een passie voor het bouwen van webapplicaties en het leren van nieuwe technologieën. Ook hou ik van sporten, daarom ben ik vaak aan het hardlopen of in de sportschool."
+      class="hover-hide" />
     <TextCenter title="Wat kan ik"
-      description="Ik heb ervaring met verschillende programmeertalen en frameworks, waaronder Vue.js, JavaScript, HTML, CSS, C#, Flutter, ASP .Net Razor, en PHP." />
-    <hr>
-    <List :title="competentiesTitle" :items="competenties" />
-    <hr>
+      description="Ik heb ervaring met verschillende programmeertalen en frameworks, waaronder Vue.js, JavaScript, HTML, CSS, C#, Flutter, ASP .Net Razor, en PHP."
+      class="hover-hide" />
+    <hr class="hover-hide">
+    <List :title="competentiesTitle" :items="competenties" class="hover-hide" />
+    <hr class="hover-hide">
     <TextCenter title="Sterkte en Zwakte"
-      description="Ik ben goed in programmeren, maar ik vind het documenteren/scrum minder leuk. Dus ik zou zeggen dat mijn sterkte programmerenn is en mijn zwakte scrum" />
+      description="Ik ben goed in programmeren, maar ik vind het documenteren/scrum minder leuk. Dus ik zou zeggen dat mijn sterkte programmerenn is en mijn zwakte scrum"
+      class="hover-hide" />
     <TextCenter title="Leerstijl"
       description="Mijn leerstijl is actief bezig zijn met het onderwerp/project. Ik leer niet snel uit een boek maar sneller door actief bezig te gaan en goed te oefenen." />
     <CarriereDoelen :goals="goalsArray" />

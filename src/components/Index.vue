@@ -10,6 +10,7 @@
                     <h1 class="display-6 mb-3 h1">Welkom op mijn Portfolio</h1>
                     <p class="lead mb-4">Hallo, ik ben <span class="naam">Niek</span>, een gepassioneerde Software dev
                         met ervaring in Vue. Hier kun je mijn projecten en werk verkennen.</p>
+                    <p class="lead">Ik heb deze portifolio gemaakt omdat dit moest voor een school opdracht.</p>
                 </div>
             </div>
         </div>

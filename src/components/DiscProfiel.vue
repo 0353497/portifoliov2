@@ -12,10 +12,10 @@
             <div class="profile-details my-4 col-12 col-md-6">
                 <h2>Kenmerken</h2>
                 <ul class="list-group">
-                    <li class="list-group-item"><strong>Dominant (D):</strong> Doelgericht, resultaatgericht,
-                        vastberaden en
-                        gedreven.</li>
-                    <li class="list-group-item"><strong>Invloed (I):</strong> Charismatisch, sociaal vaardig, inspireert
+                    <li class="list-group-item"><strong>Dominant (D) Rood:</strong> Doelgericht, resultaatgericht,
+                        vastberaden en gedreven.</li>
+                    <li class="list-group-item"><strong>Invloed (I) Geel:</strong> Charismatisch, sociaal vaardig,
+                        inspireert
                         anderen en maakt een sterke eerste indruk.</li>
                 </ul>
             </div>
@@ -23,15 +23,21 @@
                 <h2>Acties</h2>
                 <ul class="list-group">
                     <li class="list-group-item">Stel uitdagende doelen en werk systematisch naar succes toe.</li>
-                    <li class="list-group-item">Gebruik je sociale vaardigheden om relaties te versterken en anderen
-                        te
+                    <li class="list-group-item">Gebruik je sociale vaardigheden om relaties te versterken en anderen te
                         inspireren.</li>
-                    <li class="list-group-item">Houd balans tussen werk en ontspanning om burn-out te voorkomen.
-                    </li>
+                    <li class="list-group-item">Houd balans tussen werk en ontspanning om burn-out te voorkomen.</li>
                 </ul>
             </div>
         </div>
 
+        <!-- Add disk representation -->
+        <div class="disk-container my-4 text-center">
+            <h2>Visuele Representatie</h2>
+            <div class="disk">
+                <div class="segment dominant"></div>
+                <div class="segment influence"></div>
+            </div>
+        </div>
 
         <button @click="toggleMoreInfo" class="btn btn-primary d-block mx-auto">Meer Informatie</button>
 
@@ -63,7 +69,43 @@ export default {
 </script>
 
 <style scoped>
-.more-info {
-    margin-top: 20px;
+/* Disk container styles */
+.disk-container {
+    margin-top: 30px;
+}
+
+.disk {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: #f5f5f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Disk segments */
+.segment {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 50%, 100% 0, 100% 100%);
+    background-color: transparent;
+    background-color: aliceblue;
+}
+
+.segment.dominant {
+    background-color: #ff4d4d;
+    /* Red for Dominant */
+    transform: rotate(0deg) translateX(0);
+    clip-path: polygon(50% 50%, 100% 0, 100% 855%, 0% 50%);
+}
+
+.segment.influence {
+    background-color: #ffd966;
+    /* Yellow for Influence */
+    transform: rotate(180deg) translateX(0);
+    clip-path: polygon(50% 50%, 130% 50%, -400% 500%);
 }
 </style>
